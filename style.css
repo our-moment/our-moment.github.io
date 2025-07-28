@@ -1,11 +1,6 @@
 :root {
   --handwrite: "Great Vibes", system-ui;
   --monserrat: "Montserrat", system-ui;
-
-  /* --pink: #f82e64; */
-  /* --pink: #f8bbd0; */
-  /* --black: #080808; */
-  /* --black: #d4af37; */
   --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
   --primary-color: #fadadd;
   --secondary-color: #fffff0;
@@ -18,7 +13,6 @@ html {
 }
 body {
   font-size: 1.2rem;
-  /* min-height: 4000px; */
 }
 .home::before {
   content: "";
@@ -204,7 +198,6 @@ body {
   padding: 10rem 0 8rem 0;
 }
 .gift {
-  /* background-color: var(--primary-color); */
   background-image: url(img/floral.png);
   background-size: cover;
   background-position: center;
@@ -336,17 +329,12 @@ footer div {
     font-size: 85%;
   }
   .layered-mempelai {
-    /* flex-direction: row; */
     justify-content: center;
     gap: 10px;
-    /* align-items: flex-start; */
   }
 
   .left-face,
   .right-face {
-    /* width: 60vw; */
-    /* height: auto; */
-    /* transform: none; */
     filter: brightness(0.9) contrast(1.1);
     opacity: 0.4;
     margin-top: 1rem;
@@ -358,10 +346,7 @@ footer div {
   .right-face {
     transform: translateX(35%);
   }
-  /* .home main {
-    padding: 1rem;
-    z-index: 2;
-  } */
+
   .simply-countdown > .simply-section {
     padding: 25px 50px;
     margin: 5px;
@@ -385,6 +370,9 @@ footer div {
   html {
     font-size: 80%;
   }
+  #namatamu {
+    font-size: 2rem;
+  }
   .simply-countdown > .simply-section {
     padding: 20px 40px;
     margin: 3px;
@@ -397,13 +385,46 @@ footer div {
   .sticky-top {
     overflow: hidden;
   }
+  .left-face,
+  .right-face {
+    height: 98%;
+    filter: brightness(0.9) contrast(1.1);
+    opacity: 0.4;
+    margin-top: 1rem;
+  }
   .left-face {
-    transform: translateX(-15%);
+    transform: translateX(0%);
   }
   .right-face {
-    transform: translateX(15%);
+    transform: translateX(0%);
   }
   .istri {
     margin-top: 30px;
+  }
+  .gift input {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 400px) {
+    .left-face,
+    .right-face {
+      width: auto;
+      height: 65%;
+      object-fit: cover;
+      opacity: 0.9;
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 30%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+    }
+    .left-face {
+      transform: translateX(-2%);
+    }
+    .right-face {
+      transform: translateX(2%);
+    }
   }
 }
