@@ -109,6 +109,7 @@ body {
 }
 .mynavbar .offcanvas {
   height: 100vh;
+  /* height: calc(100vh - var(--safe-area-inset)); */
 }
 .navbar-brand {
   color: var(--accent-color);
@@ -160,6 +161,7 @@ body {
 .undangan {
   padding: 10rem 0 0 0;
 }
+.mempelai p,
 .undangan p,
 .gallery p,
 .rsvp p,
@@ -356,7 +358,7 @@ footer div {
     font-size: 1.5rem;
   }
   .sticky-top {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .home::before {
     background-size: contain;
@@ -425,6 +427,25 @@ footer div {
     }
     .right-face {
       transform: translateX(2%);
+    }
+    .simply-countdown > .simply-section {
+      padding: 25px;
+    }
+    .mempelai h1,
+    .undangan h1,
+    .gift h1,
+    .ucapan h1 {
+      font-size: 4rem;
+    }
+    .couple h3 {
+      font-size: 1.8rem;
+    }
+    .couple p {
+      font-size: 1rem;
+    }
+    .couple .alamat {
+      font-size: 0.8rem;
+      /* line-height: 0.2rem !important; */
     }
   }
 }
